@@ -10,15 +10,15 @@
 
 <body>
     <div id="signup-form">
-        <form action="includes/signup.inc.php" method="post">
+        <form action="includes/signup.inc.php" method="post"> 
             <fieldset>
                 <legend>Sign Up</legend>
                 <hr>
-                <p>Username: <input type="text" name="uid" value="" /></p>
-                <p>Password: <input type="password" name="pwd" value="" /></p>
-                <p>repeat password: <input type="password" name="pwdrpt" value="" /></p>
-                <p>E-mail: <input type="email" name="email" value="" /></p>
-                <input type="submit" value="sign up" /></p>
+                <p>Username: <input type="text" name="uid" placeholder="Username" /></p>
+                <p>Password: <input type="password" name="pwd" placeholder="Password" /></p>
+                <p>Repeat password: <input type="password" name="pwdrpt" placeholder="Rrepeat password" /></p>
+                <p>E-mail: <input type="email" name="email" placeholder="E-mail" /></p>
+                <input type="submit" value="Sign up"/>
             </fieldset>
         </form>
     </div>
@@ -28,14 +28,14 @@
             <fieldset>
                 <legend>Log in</legend>
                 <hr>
-                <p>Username: <input type="text" name="uid" value="" /></p>
-                <p>Password: <input type="password" name="pwd" value="" /></p>
-                <input type="submit" name="submit" value="log in" /></p>
+                <p>Username: <input type="text" name="uid" placeholder="Username" /></p>
+                <p>Password: <input type="password" name="pwd" placeholder="Password" /></p>
+                <input type="submit" name="submit" value="Log in" /></p>
             </fieldset>
         </form>
     </div>
     <?php
-    
+    echo var_dump($_POST);
     ?>
 </body>
 
